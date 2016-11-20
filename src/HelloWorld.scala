@@ -14,7 +14,8 @@ class PetRepository(pets: List[TModel]) extends TRepository {
   override def getModels: List[TModel] = pets
 
   def printNames() =
-    for (model <- getModels) print(model.getName)
+    for (model <- getModels)
+      print(model.getName)
 }
 
 object HelloWorld extends App {
